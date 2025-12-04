@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+  text-align: center;
+  background: #f4f6fb;
+}
+
+header {
+  background-color: #6b4f3b; 
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.nav-link {
+  color: #fdf6ec;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-link:hover {
+  color: #d4a373;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #d4a373;
+}
+
+
+
+h1 {
+  color: #6b4f3b;
+}
+
+.controls {
+  margin-bottom: 1.5rem;
+}
+
+select, input[type="date"], button {
+  margin: 0 0.5rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #6b4f3b;
+  font-size: 1rem;
+  color: #fdf6ec;
+  background-color: #6b4f3b;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+select, input[type="date"] {
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+button:hover {
+  background-color: #5a3d2b;
+}
+
+table {
+  margin: 1rem auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+}
+
+th {
+  background-color: #6b4f3b;
+  color: #fdf6ec;
+}
