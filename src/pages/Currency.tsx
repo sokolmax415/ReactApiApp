@@ -6,13 +6,12 @@ interface Rates {
 }
 
 const Currency: React.FC = () => {
-  const [base, setBase] = useState("EUR");  // базовая валюта, можно по умолчанию EUR
-  const [date, setDate] = useState("");    // дата в формате YYYY-MM-DD или пусто
+  const [base, setBase] = useState("EUR");
+  const [date, setDate] = useState("");
   const [rates, setRates] = useState<Rates>({});
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  // Для установки max-значения для input date (сегодняшняя дата)
   useEffect(() => {
     const today = new Date().toISOString().split("T")[0];
     if (!date) setDate(today);

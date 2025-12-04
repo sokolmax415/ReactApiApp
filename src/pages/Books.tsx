@@ -17,9 +17,7 @@ const Books: React.FC = () => {
 
   const BASE_URL = "https://openlibrary.org";
 
-  // ===========================================
-  // Загрузка ТОПа книг при открытии
-  // ===========================================
+
   useEffect(() => {
     loadTopBooks();
   }, []);
@@ -53,9 +51,6 @@ const Books: React.FC = () => {
     }
   }
 
-  // ===========================================
-  // Поиск книги по названию
-  // ===========================================
   async function searchBooks() {
     if (!query.trim()) return;
 
@@ -85,9 +80,7 @@ const Books: React.FC = () => {
     }
   }
 
-  // ===========================================
-  // Рендер
-  // ===========================================
+
   return (
     <div className="books-container">
       <h1 className="header">Библиотека</h1>
@@ -115,13 +108,13 @@ const Books: React.FC = () => {
         Справка
       </button>
 
-      {/* Ошибки */}
+      
       {error && <div className="load">{error}</div>}
 
-      {/* Загрузка */}
+      
       {loading && <div className="load">Загрузка данных...</div>}
 
-      {/* Список книг */}
+      
       <ul id="result">
         {!loading &&
           books.map((book, i) => {
