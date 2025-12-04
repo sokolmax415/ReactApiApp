@@ -19,7 +19,7 @@ interface WeatherData {
   }
 }
 
-const WEATHER_API_KEY = 'df9facbcbc7370c8519f19b8c429a17e'
+const WEATHER_API_KEY = '956516e17a209e8265602a4fefae70d4'
 const WEATHER_BASE_URL = 'https://api.weatherstack.com'
 
 const Weather: React.FC = () => {
